@@ -13,9 +13,9 @@ import java.util.ArrayList;
  *
  * @version Nov 3rd, 2021
  */
-
-public class MazeNavigator extends Thread{
-    private static int currentRow = 4 ;
+//thread is a class which has all the functions in it, mazeNavigator inherits things from thread
+public class MazeNavigator extends Thread { //command + press thread to see the thread class
+    private static int currentRow = 4 ; //static 静态；和class在一起；可修改
     private static int currentColumn = 4 ;
     private static int moveNumber = 0 ;
     private static boolean started = false;
@@ -23,8 +23,10 @@ public class MazeNavigator extends Thread{
     private int playerNumber;
     private String fileName;
 
-    public MazeNavigator(int playerNumber, String fileName){
-        this.playerNumber = playerNumber;
+    //constructor 构造参数；每new一个mazeNavigator都跟着playerNumber和fileName
+    public MazeNavigator(int playerNumber, String fileName) {
+        this.playerNumber = playerNumber; //this指mazeNavigator; the first playerNumber is
+        // private int playerNumber; the 2nd one is 参数，从外面传递过来的
         this.fileName = fileName;
     }
 
