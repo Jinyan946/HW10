@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 /**
- * HW 10 - maze
+ * HW 10 - mazeNavigator
  *
  * <p> Purdue University -- CS 180 -- 2021</p>
  *
